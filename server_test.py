@@ -1,4 +1,5 @@
-# first run server_test.py
+# first install opcua-asyncio with "pip install asyncua"
+# then run server_test.py
 # while running, run client_test.py
 
 import sys
