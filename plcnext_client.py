@@ -4,7 +4,7 @@
 # Basic Settings -> Information Model -> Visibility.. -> Marked
 # Security -> Certificate -> Self signed
 # Security -> Security Policies -> Enable basic 256 algorithm
-# 
+#
 
 import sys
 from asyncua import ua
@@ -16,8 +16,9 @@ sys.path.insert(0, "../..")
 url = "opc.tcp://192.168.1.10:4840"
 client = Client(url=url)
 client.set_user("admin")
-client.set_password("95fba93d")
-client.set_security_string("Basic256,Sign,certificate-example.der,private-key-example.pem")
+client.set_password("*********")
+security_string = "Basic256,Sign,certificate-example.der,private-key-example.pem"
+client.set_security_string(security_string)
 
 # %%
 client.connect()
