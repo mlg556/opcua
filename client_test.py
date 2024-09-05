@@ -17,7 +17,3 @@ with Client("opc.tcp://localhost:4840/freeopcua/server/") as client:
     print(f"new value: {test_var.read_value()}")
     test_var.write_value(42)
     print(f"reset to: {test_var.read_value()}")
-
-
-
-
